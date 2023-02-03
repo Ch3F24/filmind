@@ -1,0 +1,9 @@
+baseURL = 'http://filmind.test/'
+languageCode = 'hu_HU'
+title = 'Filmind'
+theme = 'filmind'
+sectionPagesMenu = "main"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

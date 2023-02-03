@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="container">
+    
+    <h1 class="mb-8 lg:mb-30">{{ .Title }}</h1>
+
+    <div class="grid grid-cols-2 gap-x-5 gap-y-4 lg:grid-cols-5 lg:gap-6">
+        {{ range .Pages.ByWeight }}
+            <article class="">
+                {{ .Render "summary" }}
+            </article>
+        {{ end }}
+    </div>
+
+    <div class="mt-12 lg:mt-30">
+        <a href="/" title="Home Page" class="inline-block">
+            <img src="/images/arrow-left.svg" alt="Arrow icon">
+        </a>
+    </div>
+</section>
+{{ end }}

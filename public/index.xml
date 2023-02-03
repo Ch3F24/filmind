@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filmind</title>
+    <link>http://filmind.test/</link>
+    <description>Recent content on Filmind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu_HU</language>
+    <lastBuildDate>Wed, 01 Feb 2023 11:24:28 +0100</lastBuildDate><atom:link href="http://filmind.test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>locations</title>
+      <link>http://filmind.test/locations/</link>
+      <pubDate>Thu, 02 Feb 2023 16:24:42 +0100</pubDate>
+      
+      <guid>http://filmind.test/locations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>welcome to FILMIND</title>
+      <link>http://filmind.test/about/</link>
+      <pubDate>Wed, 01 Feb 2023 15:49:19 +0100</pubDate>
+      
+      <guid>http://filmind.test/about/</guid>
+      <description>Filmind is the collaboration between Mythberg Films and TheScout. Based in Budapest, Hungary, Filmind offers unique solutions for full service and co-productions, locations &amp;amp; sets along with experienced and skilled professionals. With our decades-long success in both companies we decided to level up and establish a creative professional pool where all our international partners - either financiers/producers or creatives - can finally catch what they are looking for. A pool for multiple solutions for full service and co-productions, unique locations &amp;amp; sets along with experienced and skilled professionals.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://filmind.test/posts/my-first-post/</link>
+      <pubDate>Wed, 01 Feb 2023 11:24:28 +0100</pubDate>
+      
+      <guid>http://filmind.test/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

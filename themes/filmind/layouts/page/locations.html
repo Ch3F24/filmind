@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <div class="px-10 lg:px-22 ">
+        <div class="grid grid-cols-2 gap-1.5 lg:grid-cols-4 lg:gap-5">
+            {{ with getJSON "https://graph.instagram.com/me/media?fields=caption,media_url,permalink&limit=12&access_token=IGQVJXMUdyOVFSWjUtOHJGWnE1c20td2RwTVVyOWVzNlRzOHJKZAlVKUXUxSmFuektzYjFwRlZAWU0x6OWNlZAmM4emhENEl1c3dvckVHclBmOGR1Y3lDZAzJwNlBPYlV1VkJPOV9MNUtnd0g3TE0yUU1LbgZDZD" }}
+                {{ range .data }}
+                    <div>
+                        <a href="{{ .permalink}}" title="{{ .caption }}" target="_blank">
+                            {{ $image := resources.GetRemote .media_url }}
+                            {{ with $image.Fill "600x600" }}
+                                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
+                            {{ end }}
+                        </a>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <div class="mt-12 lg:mt-24">
+            <div class="flex items-center space-x-10">
+                <div>
+                    <a href="https://www.instagram.com/thescout.hu/" title="TheScout instagram page" class="arrows">
+                        <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                        <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                        <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                        <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                    </a>
+                </div>
+                <div>
+                    <img src="/images/instagram.svg" alt="instagram logo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+{{ end }}

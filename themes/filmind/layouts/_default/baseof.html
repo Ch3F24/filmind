@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="bg-cod-gray">
+        {{- partial "header.html" . -}}
+        
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+
+        {{- partial "footer.html" . -}}
+
+        {{ $js := resources.Get "/js/app.js" }}
+        <script src="{{ $js.Permalink }}"></script>
+
+        {{- block "scripts" . }}{{- end }}
+    </body>
+</html>

@@ -1,0 +1,85 @@
+{{ define "main" }}
+
+    <section id="main-links" class="container">
+        <ul class="space-y-2.5 lg:space-y-0">
+            <li>
+                <a href="/service-production">full service</a>
+            </li>
+            <li>
+                <a href="/co-production">co-production</a>
+            </li>
+            <li>
+                <a href="/cash-rebate">cash rebate</a>
+            </li>
+            <li>
+                <a href="/locations">over 10.000 locations</a>
+            </li>
+            <li>
+                <a href="/about">over 25 years in the film industry</a>
+            </li>
+            <li>
+                <a href="/our-works">references</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="movies" class="mt-12 lg:mt-16 relative lg:container py-12 lg:py-0 bg-mine-shaft lg:bg-transparent">
+        {{ with .Site.GetPage "/our-works" }}
+            {{ .Render "slider" }}
+        {{ end }}
+    </section>
+
+    <section id="prizes" class="hidden container lg:flex gap-x-4 justify-between mt-[104px] px-14">
+        <div>
+            <img src="/images/prize.png" alt="Prize">
+        </div>
+        <div>
+            <img src="/images/prize.png" alt="Prize">
+        </div>
+        <div>
+            <img src="/images/prize.png" alt="Prize">
+        </div>
+        <div>
+            <img src="/images/prize.png" alt="Prize">
+        </div>
+        <div>
+            <img src="/images/prize.png" alt="Prize">
+        </div>
+        <div>
+            <img src="/images/prize.png" alt="Prize">
+        </div>
+    </section>
+
+    <section class="container mt-[77px]">
+        <div>
+            <h1>about us</h1>
+            <p class="lg:w-4/6 mt-14">Filmind is the result of a long-term collaboration between <a href="https://www.mythbergfilms.hu" target="_blank" title="Mythberg Films website">Mythberg Films</a> and <a href="https://thescout.hu" target="_blank" title="TheScout website">TheScout</a>. Based in Budapest, Hungary, Filmind offers unique solutions for full service and co-productions, locations & sets along with experienced and skilled professionals.</p>
+            <a href="/about/" title="About us page" class="arrows mt-9 lg:mt-10">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+            </a>
+        </div>
+
+        <div class="mt-[77px]">
+            <h1>cash rebate</h1>
+            <p class="lg:w-4/6 mt-14">Since almost 30 years Hungary offers a stable and reliable 30% cash rebate system to film productions, including cinema features, animations, tv films and series, documentaries  and even shorts. No minimum spend, no cap, no delivery obligation and broad scale of eligible costs from develoment to post-production.</p>
+            <a href="/cash-reabte/" title="Cash rebate page" class="arrows mt-9 lg:mt-10">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+            </a>
+        </div>
+
+    </section>
+    
+{{ end }}
+
+{{ define "scripts" }}
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+{{ $slider := resources.Get "/js/slider.js" }}
+<script src="{{ $slider.Permalink }}"></script>
+{{ end }}

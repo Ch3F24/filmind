@@ -1,4 +1,4 @@
-baseURL = 'http://filmind.thewst.test/'
+baseURL = 'http://filmind.thewst.net/'
 languageCode = 'hu_HU'
 title = 'Filmind'
 theme = 'filmind'

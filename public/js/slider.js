@@ -23,10 +23,8 @@ function initSwiper() {
       },
     };
   
-  //   // now we need to assign all parameters to Swiper element
     Object.assign(swiperEl, swiperParams);
   
-  //   // and now initialize it
     swiperEl.initialize();
 
     const prevBtn = document.querySelector('.prev-btn');

@@ -4,7 +4,10 @@
 <div class="container">
     <swiper-container init="false" class="h-[600px] lg:h-auto">
         {{ range .Pages.ByWeight }}
-            <swiper-slide class="slide">{{ .Render "summary" }}</swiper-slide>
+            <swiper-slide class="slide">
+                {{ .Render "summary" }}
+                <div class="swiper-lazy-preloader"></div>
+            </swiper-slide>
         {{ end }}
     </swiper-container>
 </div>

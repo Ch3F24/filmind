@@ -1,14 +1,20 @@
 <head>
-    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Hugo</title>
-    <!-- resources.Get "style.css" will fetch the style.css file. 
-    It will not work if you mention the exact location like "./assets/style.css".-->
+    <title>Filmind</title>
+    <meta name="description" content="Filmind offers unique solutions for full service and co-productions, locations & sets along with experienced and skilled professionals.">
+    <meta name="keywords" content="full service, co-productions, locations & sets, movie, productions">
+
+    <meta property="og:site_name" content="Filmind">
+    <meta property="og:title" content="Filmind"/>
+    <meta property="og:description" content="Filmind offers unique solutions for full service and co-productions, locations & sets along with experienced and skilled professionals."/>
+    
+    <meta name="twitter:title" content="Filmind">
+    <meta name="twitter:description" content="Filmind offers unique solutions for full service and co-productions, locations & sets along with experienced and skilled professionals.">
+
     {{ $style := resources.Get "style.css" }}    
     <link rel="stylesheet" href="{{ $style.Permalink }}"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Inter&family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typo */
 h1,h2,a {
     @apply font-semibold text-las-palmas leading-none font-archivo;
 }
@@ -19,6 +20,14 @@ h3 > a {
 a {
     @apply hover:text-alto;
 }
+p a {
+    @apply text-xxl font-sans font-normal underline;
+}
+#main-links a {
+    @apply inline-block transform-gpu hover:translate-y-2 transition-transform duration-500
+}
+
+/* Content */
 p,
 .content-section ul {
     @apply text-xxl text-alto;
@@ -26,16 +35,16 @@ p,
 .content-section ul {
     @apply list-disc list-inside ml-4;
 }
-p a {
-    @apply text-xxl font-sans font-normal underline;
-}
 .line {
-    width: 8px;
-    @apply hidden lg:inline-block bg-las-palmas h-full ml-[76px] mr-9;
+    @apply hidden lg:inline-block bg-las-palmas h-full ml-[76px] mr-9 w-[8px];
 }
+
+/* Navigation */
 .navigation {
-    /* @apply bg-mine-shaft fixed top-0 left-0 w-full flex px-10 lg:px-22 pt-[22px] lg:pt-[50px] lg:pb-80 lg:items-start flex-wrap lg:flex-nowrap; */
-    @apply bg-mine-shaft fixed top-0 left-0 w-full px-10 lg:px-22 pt-[22px] lg:pt-[50px] lg:pb-80 lg:items-start h-full lg:h-auto hidden overflow-scroll;
+    @apply z-50 bg-mine-shaft fixed top-0 left-full w-full h-full px-10 lg:px-22 pt-[22px] lg:pt-[50px] lg:pb-80 lg:items-start lg:h-auto overflow-scroll grid grid-cols-2 grid-flow-row auto-rows-max lg:flex transition-all duration-500 lg:duration-700 invisible;
+}
+.navigation.open {
+    @apply left-0 visible;
 }
 .navigation a {
     @apply text-alto hover:text-las-palmas;
@@ -43,9 +52,8 @@ p a {
 .navigation li {
     @apply text-right;
 }
-.navigation.open {
-    @apply grid grid-cols-2 grid-flow-row auto-rows-max lg:flex
-}
+
+/* Slider */
 .slider-arrow {
     @apply absolute -translate-y-1/2 top-1/2 cursor-pointer hidden lg:block;
 }
@@ -55,13 +63,24 @@ p a {
 .slider-arrow.next-btn {
     @apply -right-8;
 }
+.swiper-wrapper {
+    width: 100% !important;
+}
+@media screen and (max-width: 1024px) {
+    .slide {
+        height: calc((100% - 40px) / 3) !important;
+    }   
+}
 
+/* Services page */
 .service-container {
     @apply py-10 px-4 bg-mine-shaft flex items-center justify-center;
 }
 .service-container p {
     @apply text-las-palmas font-medium text-2xl text-center;
 }
+
+/* Arrows icon */
 .arrows {
     @apply inline-block flex space-x-2;
 }
@@ -71,18 +90,3 @@ p a {
 .left-arrows img {
     @apply rotate-180;
 }
-.swiper-wrapper {
-    width: 100% !important;
-}
-@media screen and (max-width: 1024px) {
-    .slide {
-        height: calc((100% - 40px) / 3) !important;
-    }   
-}
-/* .valami {
-    padding-top: 1rem!important;
-} */
-/* .valami:nth-child(4),
-.valami:nth-child(1) {
-    @apply mt-0;
-} */

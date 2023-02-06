@@ -14,5 +14,8 @@
         <script src="{{ $js.Permalink }}"></script>
 
         {{- block "scripts" . }}{{- end }}
+        
+        {{- partial "cookie.html" . -}}
+        {{- partial "analytics.html" . -}}
     </body>
 </html>

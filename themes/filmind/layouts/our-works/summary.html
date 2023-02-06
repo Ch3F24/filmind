@@ -3,7 +3,6 @@
   {{ with .Resources.GetMatch "cover.jpg" }}
     {{ with .Resize "600x webp" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $t }}" loading="lazy">
-        <div class="swiper-lazy-preloader"></div>
     {{ end }}
   {{ end }}
 </a>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Filmind</title>
-    <link>http://filmind.test/</link>
-    <description>Recent content on Filmind</description>
+    <title>our works on Filmind</title>
+    <link>http://filmind.test/our-works/</link>
+    <description>Recent content in our works on Filmind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu_HU</language>
-    <lastBuildDate>Fri, 03 Feb 2023 11:52:43 +0100</lastBuildDate><atom:link href="http://filmind.test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 17:25:39 +0100</lastBuildDate><atom:link href="http://filmind.test/our-works/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eden</title>
       <link>http://filmind.test/our-works/eden/</link>
@@ -158,68 +158,6 @@
       
       <guid>http://filmind.test/our-works/shadow_of_justice/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>co-production</title>
-      <link>http://filmind.test/co-production/</link>
-      <pubDate>Fri, 03 Feb 2023 12:05:01 +0100</pubDate>
-      
-      <guid>http://filmind.test/co-production/</guid>
-      <description>Hungary is part of the European Co-production Convention and already ratified the Revised Convention.
-Hungary has bilateral co-production agreements in force with Canada, France, Italy, Germany and Israel.
-Co-productions with countries of the OECD DAC list are accepted.
-Both majority and minority co-productions are accepted for the cash rebate as automatic support and we can also apply for selective subsidy to the National Film Institute.
-The subsidy intensity is 60% as a general rule which means that the state support (cash rebate + selective subsidy) may not exceed 60% of the Hungarian co-producer&amp;rsquo;s contribution.</description>
-    </item>
-    
-    <item>
-      <title>full-service production</title>
-      <link>http://filmind.test/service-production/</link>
-      <pubDate>Thu, 02 Feb 2023 17:10:02 +0100</pubDate>
-      
-      <guid>http://filmind.test/service-production/</guid>
-      <description>As cash rebate, service production is under the same consideration as any other way of production. If you send us your script, we will check if it complies with legal and content requirements. Along with it we send you a draft budget and a location mood to you to have detailed feedback on your project.
-With Filmind, the application procedure to the National Film Office is easygoing:
-with our expertise, we advise and provide the budget on the best and safest way to exploit the cash rebate we provide all legal documents to be submitted if needed, we can also arrange Hungarian VAT and rebate pre-financing The application has to be submitted with the National Film Office at least 30 days prior to the first day of principal photography.</description>
-    </item>
-    
-    <item>
-      <title>contact</title>
-      <link>http://filmind.test/contact/</link>
-      <pubDate>Thu, 02 Feb 2023 16:24:51 +0100</pubDate>
-      
-      <guid>http://filmind.test/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>locations</title>
-      <link>http://filmind.test/locations/</link>
-      <pubDate>Thu, 02 Feb 2023 16:24:42 +0100</pubDate>
-      
-      <guid>http://filmind.test/locations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cash Rebate</title>
-      <link>http://filmind.test/cash-rebate/</link>
-      <pubDate>Thu, 02 Feb 2023 15:46:47 +0100</pubDate>
-      
-      <guid>http://filmind.test/cash-rebate/</guid>
-      <description>Hungary offers a very simple tax rebate system for film and/or television projects with eligible development and production expenditure by the Hungarian Motion Picture Act.
-Most of cinema and television or other distribution platform films, series, tv-movies, shorts, documentaries, animations, even music videos can benefit, with the exception of advertisements, sitcoms, reality shows, daily soaps and other non-fiction television programs, games.
-The tax rebate is 30% of the eligible Hungarian spent, the rebate has no cap.</description>
-    </item>
-    
-    <item>
-      <title>welcome to FILMIND</title>
-      <link>http://filmind.test/about/</link>
-      <pubDate>Wed, 01 Feb 2023 15:49:19 +0100</pubDate>
-      
-      <guid>http://filmind.test/about/</guid>
-      <description>Filmind is the collaboration between Mythberg Films and TheScout. Based in Budapest, Hungary, Filmind offers unique solutions for full service and co-productions, locations &amp;amp; sets along with experienced and skilled professionals. With our decades-long success in both companies we decided to level up and establish a creative professional pool where all our international partners - either financiers/producers or creatives - can finally catch what they are looking for. A pool for multiple solutions for full service and co-productions, unique locations &amp;amp; sets along with experienced and skilled professionals.</description>
     </item>
     
   </channel>

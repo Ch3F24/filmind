@@ -1,7 +1,6 @@
 ---
 title: "full-service production"
 date: 2023-02-02T17:10:02+01:00
-draft: true
 ---
 
 As cash rebate, service production is under the same consideration as any other way of production. If you send us your script, we will check if it complies with legal and content requirements. Along with it we send you a draft budget and a location mood to you to have detailed feedback on your project.

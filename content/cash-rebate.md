@@ -1,7 +1,6 @@
 ---
-title: "Cash Rebate"
+title: "cash Rebate"
 date: 2023-02-02T15:46:47+01:00
-draft: true
 ---
 
 Hungary offers a very simple tax rebate system for film and/or television projects with eligible development and production expenditure by the Hungarian Motion Picture Act.

@@ -1110,6 +1110,12 @@ p,
   padding-right: 1rem;
 }
 
+@media (min-width: 1024px) {
+  .service-container {
+    order: 0;
+  }
+}
+
 .service-container p {
   text-align: center;
   font-size: 1.5rem;

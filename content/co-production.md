@@ -1,7 +1,6 @@
 ---
 title: "co-production"
 date: 2023-02-03T12:05:01+01:00
-draft: true
 ---
 
 Hungary is part of the European Co-production Convention and already ratified the Revised Convention.

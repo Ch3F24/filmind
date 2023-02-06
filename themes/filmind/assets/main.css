@@ -74,7 +74,7 @@ p,
 
 /* Services page */
 .service-container {
-    @apply py-10 px-4 bg-mine-shaft flex items-center justify-center;
+    @apply py-10 px-4 bg-mine-shaft flex items-center justify-center lg:order-none;
 }
 .service-container p {
     @apply text-las-palmas font-medium text-2xl text-center;

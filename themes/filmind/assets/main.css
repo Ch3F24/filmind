@@ -15,7 +15,7 @@ h2 {
 }
 h3,
 h3 > a {
-    @apply font-extrabold lg:text-4.5xl text-alto font-archivo;
+    @apply font-extrabold text-3xl lg:text-4.5xl text-alto font-archivo;
 }
 a {
     @apply hover:text-alto;

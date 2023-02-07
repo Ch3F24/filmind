@@ -1087,13 +1087,13 @@ p,
 }
 
 .slider-arrow.prev-btn {
-  left: -2rem;
+  left: 1rem;
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .slider-arrow.next-btn {
-  right: -2rem;
+  right: 1rem;
 }
 
 .swiper-wrapper {
@@ -1108,6 +1108,8 @@ p,
   .slide img {
     height: 100%;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

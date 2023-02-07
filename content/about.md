@@ -3,7 +3,7 @@ title: "welcome to FILMIND"
 date: 2023-02-01T15:49:19+01:00
 ---
 
-Filmind is the collaboration between Mythberg Films and TheScout. Based in Budapest, Hungary, Filmind offers unique solutions for full service and co-productions, locations & sets along with experienced and skilled professionals. With our decades-long success in both companies we decided to level up and establish a creative professional pool where all our international partners - either financiers/producers or creatives - can finally catch what they are looking for. A pool for multiple solutions for full service and co-productions, unique locations & sets along with experienced and skilled professionals.
+Filmind is the collaboration between Mythberg Films and TheScout. Based in Budapest, Hungary, Filmind offers unique solutions for full service and co-productions, locations & sets along with experienced and skilled professionals. With our decades-long success in both companies we decided to level up and establish a creative professional pool where all our international partners - either financiers/producers or creatives - can finally catch what they are looking for.
  
 Both companies are already well-known and acclaimed in the international movie industry.
 

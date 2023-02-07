@@ -61,10 +61,10 @@ p,
     @apply absolute -translate-y-1/2 top-1/2 cursor-pointer hidden lg:block;
 }
 .slider-arrow.prev-btn {
-    @apply rotate-180 -left-8;
+    @apply rotate-180 left-4;
 }
 .slider-arrow.next-btn {
-    @apply -right-8;
+    @apply right-4;
 }
 .swiper-wrapper {
     width: 100% !important;
@@ -76,6 +76,7 @@ p,
     .slide img {
         height: 100%;
         width: auto;
+        @apply mx-auto;
     }
 }
 

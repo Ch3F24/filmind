@@ -41,7 +41,10 @@ p,
 
 /* Navigation */
 .navigation {
-    @apply z-50 bg-mine-shaft fixed top-0 left-full w-full h-full px-10 lg:px-22 pt-[22px] lg:pt-[50px] lg:pb-80 lg:items-start lg:h-auto overflow-scroll grid grid-cols-2 grid-flow-row auto-rows-max lg:flex transition-all duration-500 lg:duration-700 invisible;
+    @apply z-50 bg-mine-shaft fixed top-0 left-full w-full h-full transition-all duration-500 lg:duration-700 invisible;
+}
+.navigation-container {
+    @apply lg:items-start lg:h-full overflow-scroll grid grid-cols-2 grid-flow-row auto-rows-max lg:flex px-10 lg:px-22 pt-[22px] lg:py-[50px]
 }
 .navigation.open {
     @apply left-0 visible;

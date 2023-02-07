@@ -1012,18 +1012,10 @@ p,
   top: 0px;
   left: 100%;
   z-index: 50;
-  display: grid;
   height: 100%;
   width: 100%;
-  grid-auto-flow: row;
-  grid-auto-rows: max-content;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  overflow: scroll;
   --tw-bg-opacity: 1;
   background-color: rgb(60 60 60 / var(--tw-bg-opacity));
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 22px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -1031,14 +1023,30 @@ p,
 
 @media (min-width: 1024px) {
   .navigation {
+    transition-duration: 700ms;
+  }
+}
+
+.navigation-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: scroll;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 22px;
+}
+
+@media (min-width: 1024px) {
+  .navigation-container {
     display: flex;
-    height: auto;
+    height: 100%;
     align-items: flex-start;
     padding-left: 5.5rem;
     padding-right: 5.5rem;
     padding-top: 50px;
-    padding-bottom: 20rem;
-    transition-duration: 700ms;
+    padding-bottom: 50px;
   }
 }
 

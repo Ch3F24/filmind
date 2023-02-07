@@ -1,8 +1,12 @@
-baseURL = 'http://filmind.thewst.net/'
-languageCode = 'hu_HU'
+baseURL = 'https://filmind.hu/'
+languageCode = 'hu'
 title = 'Filmind'
 theme = 'filmind'
 sectionPagesMenu = "main"
+[params]
+  AuthorName = 'Zsolt Horváth'
+  GitHubUser = 'Ch3F24'
+  
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

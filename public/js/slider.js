@@ -6,7 +6,9 @@ function initSwiper() {
         rows: 3,
       },
       spaceBetween: 20,
-
+      autoplay: {
+        delay: 2000,
+      },
       breakpoints: {
         1024: {
           slidesPerView: 5,
@@ -14,11 +16,6 @@ function initSwiper() {
             rows: 1,
           },
 
-        },
-      },
-      on: {
-        init() {
-          // ...
         },
       },
     };

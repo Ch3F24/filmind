@@ -1,8 +1,6 @@
 {{ $t := .Title }}
 <a href="{{ $.Params.imdb}}" target="_blank" title="{{ $t }} imdb page">
   {{ with .Resources.GetMatch "cover.jpg" }}
-    {{ with .Resize "600x webp" }}
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $t }}" loading="lazy">
-    {{ end }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $t }}" loading="lazy">
   {{ end }}
 </a>

@@ -3,7 +3,7 @@
         <h1 class="mb-8 lg:mb-30">{{ .Title }}</h1>
     
         <div class="grid lg:grid-cols-3">
-            {{ range $.Site.Data.contact }}
+            {{ range sort $.Site.Data.contact "weight" }}
             <div class="pt-8 pb-12">
                 <h3>
                     {{ if .Imdb }}

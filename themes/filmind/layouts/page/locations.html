@@ -1,7 +1,7 @@
-<!-- {{ define "main" }}
+{{ define "main" }}
     <div class="px-10 lg:px-22 ">
         <div class="grid grid-cols-2 gap-1.5 lg:grid-cols-4 lg:gap-5">
-            {{ with getJSON "https://graph.instagram.com/me/media?fields=caption,media_url,permalink&limit=12&access_token=IGQVJXMUdyOVFSWjUtOHJGWnE1c20td2RwTVVyOWVzNlRzOHJKZAlVKUXUxSmFuektzYjFwRlZAWU0x6OWNlZAmM4emhENEl1c3dvckVHclBmOGR1Y3lDZAzJwNlBPYlV1VkJPOV9MNUtnd0g3TE0yUU1LbgZDZD" }}
+            {{ with getJSON "https://graph.instagram.com/me/media?fields=caption,media_url,permalink&limit=12&access_token=IGQVJWcnFPbjhITVdyRkl4cXZAzWmczWnFaOWJ1T3lwV0tFRU5ocVJhQ0tLOTRMajZAaSHlTRk1Ua2xTaW9LcGtDWThWN3ctQ09JMnVGWDIyY1FKaE0xMkZAMN2c4SHViQXZAKaXM2RTlIRHFxdXc0Y3BWaQZDZD" }}
                 {{ range .data }}
                     <div>
                         <a href="{{ .permalink}}" title="{{ .caption }}" target="_blank">
@@ -32,4 +32,4 @@
         </div>
 
     </div>
-{{ end }} -->
+{{ end }}

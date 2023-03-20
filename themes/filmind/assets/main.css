@@ -44,7 +44,7 @@ p,
     @apply z-50 bg-mine-shaft fixed top-0 left-full w-full h-full transition-all duration-500 lg:duration-700 invisible;
 }
 .navigation-container {
-    @apply lg:items-start lg:h-full overflow-scroll grid grid-cols-2 grid-flow-row auto-rows-max lg:flex px-10 lg:px-22 pt-[22px] lg:py-[50px]
+    @apply lg:items-start lg:h-full max-h-screen overflow-scroll grid grid-cols-2 grid-flow-row auto-rows-max lg:flex px-10 lg:px-22 pt-[22px] lg:py-[50px]
 }
 .navigation.open {
     @apply left-0 visible;

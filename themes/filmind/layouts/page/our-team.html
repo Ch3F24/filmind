@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <section class="container">
+        <h1 class="mb-8 lg:mb-30">{{ .Title }}</h1>
+    
+        <div class="grid lg:grid-cols-3">
+            {{ range sort $.Site.Data.contact "weight" }}
+            <div class="pt-8 pb-12">
+                <h3>
+                    {{ if .Imdb }}
+                        <a href="{{ .Imdb }}" class="hover:underline">{{ .Name }}</a>
+                    {{ else }}
+                        {{ .Name }}
+                    {{ end }}
+                </h3>
+                <p>{{ .Position }}</p>
+                <p class="text-alto mt-5">
+                    <a href="tel:{{ .Phone }}" class="text-alto no-underline" title="Call {{ .Phone }}">{{ .Phone }}</a>
+                </p>
+                <p>
+                    <a href="mailto:{{ .EMail }}" title="Mail to {{ .Email }}">{{ .Email }}</a>
+                </p>
+            </div>
+        {{ end }}
+        </div>
+        
+        <div class="mt-12 lg:mt-24">
+            <a href="/" title="Home page" class="arrows left-arrows">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+                <img src="/images/slider-arrow.svg" alt="Arrow icon">
+            </a>
+        </div>
+    </section>
+{{ end }}

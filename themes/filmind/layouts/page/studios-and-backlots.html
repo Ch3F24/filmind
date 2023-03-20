@@ -1,0 +1,76 @@
+{{ define "main" }}
+<section class="container">
+    
+    <h1 class="mb-8 lg:mb-12">{{ .Title }}</h1>
+    <div class="space-y-4 lg:w-5/6 content-section">
+        <h2>Studios and backlots in Budapest</h2>
+        <p>Budapest is a stage empire in Central Eastern Europe, offering the largest number of square meters and the best equipped stages and backlots. </p>
+        <p>All stage complexes are either in Budapest or in the periphery of the capital city. <b>More than 30 sound stages</b> with a size of <b>350sqm</b> to <b>6000sqm</b>, outdoor and indoor water tanks, backlot sets like modern New York, Renaissance, Medieval, American suburb street, Western village…etc. Of course, along with production accommodations, warehouses and workshop areas and with hectares of backlot, suitable for set construction.</p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-x-5 gap-y-4 lg:grid-cols-5 lg:gap-6 mt-12">
+        {{ range $.Site.Data.studios_and_backlots }}
+            {{ range .images }}
+                <article>
+                    {{ with resources.Get . }}
+                    {{ $image := .Resize "660x webp" }}
+                        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" class="max-h-[148px]">
+                    {{ end }}
+                </article>
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <div class="space-y-4 lg:w-5/6 content-section">
+        <h2>Korda Studios</h2>
+        <ul>
+            <li>located 30 km (18 miles) west of Budapest.</li>
+            <li>6 state of the art sound stages on 15 000 sqm</li>
+            <li>One of the biggest soundstages in the world: 6 000 sqm and net buildable height of 20m</li>
+            <li>More than 2 800 sqm of production accommodations</li>
+            <li>Nearly 7 000 sqm of warehouse and workshop areas</li>
+            <li>15 hectares (37 acres) of empty backlot space suitable for set construction</li>
+            <li>10 hectares of backlot sets: New York, Renaissance and Medieval</li>
+        </ul>
+    </div>
+
+    <div class="space-y-4 lg:w-5/6 content-section">
+        <h2>Origo Studios</h2>
+        <ul>
+            <li>located in Budapest</li>
+            <li>10 stages (8 soundstages, 2 VFX/multimedia stages) totaling 18,000 sqm (195,000 sq ft)</li>
+            <li>4 hectares (10 acres) of backlot</li>
+            <li>Offices and warehouses for storage of props, costumes and equipment</li>
+        </ul>
+    </div>
+
+    <div class="space-y-4 lg:w-5/6 content-section">
+        <h2>NFI Studios</h2>
+        <ul>
+            <li>located 7 km from Budapest</li>
+            <li>4 sound stages on from 385sqm to 1620sqm</li>
+            <li>4 new sound stages under construction from 2313 sqm to 4945 sqm (connected)</li>
+            <li>Europe’s largest outdoor water tank   (47m x 39m at a depth of 2m with an inner tank 20m x 15m at a depth of 5,5m)</li>
+            <li>Medieval backlot with 15000 sqm</li>
+            <li>American suburb street with 2500 sqm</li>
+            <li>Western village with 2500 sqm</li>
+            <li>2 new studios are scheduled to be completed by the beginning of 2024</li>
+        </ul>
+    </div>
+
+    <div class="space-y-4 lg:w-5/6 content-section">
+        <h2>Astra Studios</h2>
+        <ul>
+            <li>located 20km from downtown Budapest</li>
+            <li>6 sound stages from 504sqm to 2328 sqm</li>
+            <li>Budapest’s largest indoor water tank (171 sqm, 19 m x 9 m / 63 ft x 29 ft depth: 6 m / 20 ft)</li>
+        </ul>
+    </div>
+
+    <div class="mt-12 lg:mt-30">
+        <a href="/" title="Home Page" class="inline-block">
+            <img src="/images/arrow-left.svg" alt="Arrow icon">
+        </a>
+    </div>
+</section>
+{{ end }}

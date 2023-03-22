@@ -1,10 +1,12 @@
 <footer class="pt-16 pb-9 lg:py-[70px] bg-mine-shaft mt-[100px]">
     <div class="container lg:flex justify-between">
         <div class="mb-6 lg:mb-0">
+            {{ if ne .Title "contact" }}
             <img src="/images/small-logo.svg" alt="FIlmind logo">
             <p class="mt-3.5 text-lg">Budapest, Budakeszi út 51. H-1022</p>
             <p class="text-lg">Telephone: +36 (1) 413-7236</p>
             <p class="text-lg">office@filmind.hu</p>
+            {{ end }}
         </div>
         <div class="lg:flex items-center">
             <p class="mb-20 lg:mb-0 lg:py-3.5">

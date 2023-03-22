@@ -700,6 +700,10 @@ video {
   max-height: 148px;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
 .w-\[181px\] {
   width: 181px;
 }
@@ -878,6 +882,10 @@ video {
   font-size: 1.375rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -885,6 +893,11 @@ video {
 .text-alto {
   --tw-text-opacity: 1;
   color: rgb(217 217 217 / var(--tw-text-opacity));
+}
+
+.text-las-palmas {
+  --tw-text-opacity: 1;
+  color: rgb(188 241 38 / var(--tw-text-opacity));
 }
 
 .text-cod-gray {

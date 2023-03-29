@@ -7,14 +7,13 @@
         <p>Budapest is a stage empire in Central Eastern Europe, offering the largest number of square meters and the best equipped stages and backlots. </p>
         <p>All stage complexes are either in Budapest or in the periphery of the capital city. <span class="font-bold text-las-palmas">More than 30 sound stages</span> with a size of <span class="font-bold text-las-palmas">350sqm</span> to <span class="font-bold text-las-palmas">6000sqm</span>, outdoor and indoor water tanks, backlot sets like modern New York, Renaissance, Medieval, American suburb street, Western village…etc. Of course, along with production accommodations, warehouses and workshop areas and with hectares of backlot, suitable for set construction.</p>
     </div>
-    <!-- <div class="grid grid-cols-2 gap-x-5 gap-y-4 lg:grid-cols-5 lg:gap-6 mt-12"> -->
         {{ range $.Site.Data.studios_and_backlots }}
-        <section id="movies" class="mt-12 lg:mt-16 relative lg:container py-12 lg:py-0 bg-mine-shaft lg:bg-transparent">
+        <section id="studios_and_backlots" class="mt-12 lg:mt-16 relative lg:container py-12 lg:py-0 bg-mine-shaft lg:bg-transparent">
             <div class="prev-btn slider-arrow" title="Prev">
                 <img src="/images/slider-arrow.svg" alt="Prev">
             </div>
             <div class="container">
-                <swiper-container init="false" class="lg:h-auto">
+                <swiper-container init="false" class="h-[300px] lg:h-auto">
                     {{ range .images }} 
                         <swiper-slide class="slide">
                             {{ with resources.Get . }}
@@ -29,19 +28,7 @@
                 <img src="/images/slider-arrow.svg" alt="Next">
             </div>
         </section>
-
-
-
-            <!-- {{ range .images }} 
-                <article>
-                    {{ with resources.Get . }}
-                    {{ $image := .Resize "660x webp" }}
-                        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" class="max-h-[148px]">
-                    {{ end }}
-                </article>
-            {{ end }} -->
         {{ end }}
-    <!-- </div> -->
 
     <div class="space-y-4 lg:w-5/6 content-section">
         <h2>Korda Studios</h2>

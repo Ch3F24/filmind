@@ -73,9 +73,14 @@ p,
     .slide {
         height: calc((100% - 40px) / 3) !important;
     }
-    .slide img {
+    #movies .slide img {
         height: 100%;
         width: auto;
+        @apply mx-auto;
+    }
+    #studios_and_backlots .slide img {
+        height: auto;
+        width: 100%;
         @apply mx-auto;
     }
 }

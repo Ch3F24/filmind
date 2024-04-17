@@ -6,6 +6,7 @@ sectionPagesMenu = "main"
 [params]
   AuthorName = 'Zsolt Horváth'
   GitHubUser = 'Ch3F24'
+  InstagramToken = 'IGQWRNeEk1b2tOWmQyLVJGOEhrUWdCX0w0TFZAERlNlVnVKNjdWMEhXRF96U0FnaTBieG1MLWpjTjVSenpQVmtNdl94ZAnlLbC1tUjNmMWxmN3NXenBHVVdRUDV6UnpLaV8xV2ZAScXZAqMVlFQkRLS3ZALcE1vdmJoblEZD'
   
 [markup]
   [markup.goldmark]

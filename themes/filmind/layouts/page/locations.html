@@ -1,19 +1,25 @@
-<!-- {{ define "main" }}
+{{ define "main" }}
     <div class="px-10 lg:px-22 ">
         <div class="grid grid-cols-2 gap-1.5 lg:grid-cols-4 lg:gap-5">
-            {{ with getJSON "https://graph.instagram.com/me/media?fields=caption,media_url,permalink&limit=12&access_token=IGQVJWcnFPbjhITVdyRkl4cXZAzWmczWnFaOWJ1T3lwV0tFRU5ocVJhQ0tLOTRMajZAaSHlTRk1Ua2xTaW9LcGtDWThWN3ctQ09JMnVGWDIyY1FKaE0xMkZAMN2c4SHViQXZAKaXM2RTlIRHFxdXc0Y3BWaQZDZD" }}
-                {{ range .data }}
-                    <div>
-                        <a href="{{ .permalink}}" title="{{ .caption }}" target="_blank">
-                            {{ $image := resources.GetRemote .media_url }}
-                            {{ with $image.Fill "600x600" }}
-                                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
-                            {{ end }}
-                        </a>
-                    </div>
-                {{ end }}
+            {{ $urlPre := "https://graph.instagram.com/me/media?fields=caption,media_url,permalink&limit=12&access_token=" }}
+            {{ $id := .Site.Params.InstagramToken }}
+            {{ $inst := getJSON $urlPre $id }}
+            
+            {{ range $inst.data }}
+                <div>
+                    <a href="{{ .permalink}}" title="{{ .caption }}" target="_blank">
+                        {{ $image := resources.GetRemote .media_url }}
+                        {{ with $image.Fill "600x600" }}
+                            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
+                        {{ end }}
+                    </a>
+                </div>
             {{ end }}
         </div>
+
+        {{ with getJSON "http://worldtimeapi.org/api/timezone/Europe/Budapest" }}
+            {{ .datetime }}
+        {{ end }}
 
         <div class="mt-12 lg:mt-24">
             <div class="flex items-center space-x-10">
@@ -32,4 +38,4 @@
         </div>
 
     </div>
-{{ end }} -->
+{{ end }}

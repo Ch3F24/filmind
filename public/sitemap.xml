@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://filmind.hu/our-works/libertate/</loc>
+    <lastmod>2025-04-24T18:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://filmind.hu/our-works/berlin_i_love_you/</loc>
     <lastmod>2023-02-03T11:42:26+01:00</lastmod>
   </url><url>
@@ -56,10 +59,10 @@
     <loc>https://filmind.hu/our-works/fomenu/</loc>
     <lastmod>2023-02-03T11:44:33+01:00</lastmod>
   </url><url>
-    <loc>https://filmind.hu/co-production/</loc>
-    <lastmod>2023-02-03T12:05:01+01:00</lastmod>
-  </url><url>
     <loc>https://filmind.hu/</loc>
+    <lastmod>2025-04-24T18:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://filmind.hu/co-production/</loc>
     <lastmod>2023-02-03T12:05:01+01:00</lastmod>
   </url><url>
     <loc>https://filmind.hu/service-production/</loc>

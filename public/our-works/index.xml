@@ -4,10 +4,17 @@
     <title>our works on Filmind</title>
     <link>https://filmind.hu/our-works/</link>
     <description>Recent content in our works on Filmind</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>hu</language>
-    <lastBuildDate>Fri, 03 Feb 2023 11:52:43 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 24 Apr 2025 18:00:00 +0100</lastBuildDate>
     <atom:link href="https://filmind.hu/our-works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Libertate</title>
+      <link>https://filmind.hu/our-works/libertate/</link>
+      <pubDate>Thu, 24 Apr 2025 18:00:00 +0100</pubDate>
+      <guid>https://filmind.hu/our-works/libertate/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Berlin i love you</title>
       <link>https://filmind.hu/our-works/berlin_i_love_you/</link>
